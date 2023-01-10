@@ -1,0 +1,41 @@
+body {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blob {
+    height: 150px;
+    width: 150px;
+    border-radius: 58% 43% 33% 64% / 50% 38% 53% 50%;
+    background: transparent;
+    box-shadow: inset 6px 33px 20px 0 #c9c9c9, inset 20px 80px 15px 0 #e0e0e0, 10px 20px 20px 0px #c9c9c9;
+}
+
+.blob::before {
+    margin-left: 0%;
+    margin-top: 150px;
+    content: '';
+    position: absolute;
+    border-radius: 37% 54% 46% 46%;
+    background: white;
+    width: 50px;
+    transform: rotate(-35deg);
+    height: 15px;
+    top: 20px;
+    left: 20px;
+}
+
+.blob::after {
+    margin-left: -5%;
+    margin-top: 140px;
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+    width: 10px;
+    height: 10px;
+    top: 60px;
+    left: 20px;
+}
